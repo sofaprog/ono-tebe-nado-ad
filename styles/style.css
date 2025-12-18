@@ -1,9 +1,8 @@
-/* ====== HEADER ====== */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 24px 96px;
+  padding: 92px 24px 90px;
 }
 
 .header__menu {
@@ -17,8 +16,14 @@
   padding-left: 20px;
 }
 
+.header__links-list-item {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 .header__links-list-item_no-bullit {
   list-style: none;
+  padding-left: 0;
 }
 
 .header__link {
@@ -31,13 +36,15 @@
 }
 
 .header__logo {
+  display: block;
   width: 148px;
+  height: 105px;
   justify-self: center;
 }
 
 .header__logo-image {
-  display: block;
   width: 100%;
+  height: 100%;
 }
 
 .address {
@@ -51,10 +58,11 @@
   max-width: 240px;
 }
 
-/* ====== COVER ====== */
+/* ===== COVER ===== */
+
 .cover {
   position: relative;
-  padding: 165px 50px 50px;
+  padding: 160px 50px 50px;
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
@@ -66,15 +74,16 @@
   position: absolute;
   inset: 0;
   background-color: rgb(0 0 0 / 0.6);
+  z-index: 0;
 }
 
 .cover__title {
   position: relative;
   z-index: 1;
   color: #fff;
+  font-weight: 700;
   font-size: 100px;
   line-height: 115px;
-  font-weight: 700;
   letter-spacing: 30px;
 }
 
@@ -101,7 +110,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 78px;
-  margin-top: 137px;
+  margin-top: 132px;
   color: #fff;
 }
 
@@ -121,9 +130,10 @@
   cursor: pointer;
 }
 
-/* ====== LOTS ====== */
+/* ===== LOTS ===== */
+
 .lots {
-  padding: 179px 24px 0;
+  padding: 170px 24px 0;
 }
 
 .lots__heading {
@@ -176,23 +186,36 @@
 }
 
 .card__title {
+  position: relative;
+  z-index: 1;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .card__text {
+  position: relative;
+  z-index: 1;
   font-size: 20px;
   line-height: 1.2;
 }
 
-/* ====== ABOUT ====== */
+.lots__look-more-link {
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  font-size: 20px;
+  text-underline-offset: 4px;
+}
+
+/* ===== ABOUT ===== */
+
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  padding: 181px 24px 0;
+  padding: 170px 24px 0;
 }
 
 .about__logo {
@@ -211,24 +234,26 @@
 }
 
 .about__title {
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .about__text {
-  max-width: 693px;
-  font-size: 20px;
-  line-height: 1.2;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  max-width: 693px;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
-/* ====== FOOTER ====== */
+/* ===== FOOTER ===== */
+
 .footer {
-  padding: 180px 24px 88px;
+  padding: 180px 24px 90px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -244,6 +269,7 @@
 
 .footer__menu-link {
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
@@ -257,7 +283,7 @@
   list-style: none;
 }
 
-.footer__social-icon {
+.footer__social-list img {
   width: 48px;
   height: 48px;
 }
