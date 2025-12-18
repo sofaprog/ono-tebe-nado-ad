@@ -1,3 +1,8 @@
+body {
+  font-family: Raleway, sans-serif;
+}
+
+/* ====== HEADER ====== */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -285,4 +290,3 @@
   width: 48px;
   display: block;
 }
-```
