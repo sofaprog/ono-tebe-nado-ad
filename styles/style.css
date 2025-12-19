@@ -1,4 +1,4 @@
-/* ==== critical resets for pixel-perfect ==== */
+/* ===== Pixel-perfect resets (критично) ===== */
 h1,
 h2,
 h3,
@@ -14,7 +14,7 @@ ol {
   list-style-position: outside;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 
 .header {
   display: grid;
@@ -31,7 +31,8 @@ ol {
   display: flex;
   gap: 32px;
   list-style: circle;
-  padding-left: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .header__links-list-item_no-bullit {
@@ -78,7 +79,7 @@ ol {
   max-width: 240px;
 }
 
-/* COVER */
+/* ===== COVER ===== */
 
 .cover {
   position: relative;
@@ -119,10 +120,6 @@ ol {
   text-align: right;
 }
 
-.letter-spacing-extended {
-  letter-spacing: 60px;
-}
-
 .no-letter-spacing {
   letter-spacing: 0;
 }
@@ -155,7 +152,7 @@ ol {
   cursor: pointer;
 }
 
-/* LOTS */
+/* ===== LOTS ===== */
 
 .lots {
   padding: 179px 24px 0;
@@ -174,6 +171,8 @@ ol {
   flex-wrap: wrap;
   gap: 25px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .lots__card-list-item {
@@ -241,7 +240,7 @@ ol {
   color: inherit;
 }
 
-/* ABOUT */
+/* ===== ABOUT ===== */
 
 .about {
   display: grid;
@@ -283,7 +282,11 @@ ol {
   gap: 24px;
 }
 
-/* FOOTER */
+.about__text p {
+  margin: 0;
+}
+
+/* ===== FOOTER ===== */
 
 .footer {
   padding: 180px 24px 88px;
@@ -303,6 +306,8 @@ ol {
 .footer__menu-list {
   list-style: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__menu-link {
@@ -320,6 +325,8 @@ ol {
   display: flex;
   gap: 48px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__social-link {
