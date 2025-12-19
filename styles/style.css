@@ -1,3 +1,19 @@
+/* ==== critical resets for pixel-perfect ==== */
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-position: outside;
+}
+
 /* HEADER */
 
 .header {
@@ -20,12 +36,12 @@
 
 .header__links-list-item_no-bullit {
   list-style: none;
-  padding-left: 0;
 }
 
 .header__link {
   text-decoration: underline;
   text-underline-offset: 4px;
+  color: inherit;
 }
 
 .header__link_active {
@@ -54,6 +70,7 @@
 .address__link {
   text-decoration: underline;
   text-underline-offset: 4px;
+  color: inherit;
 }
 
 .header__address {
@@ -100,6 +117,10 @@
 
 .aligned-text_right {
   text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
 }
 
 .no-letter-spacing {
@@ -164,6 +185,7 @@
   display: block;
   height: 100%;
   text-decoration: none;
+  color: inherit;
 }
 
 .card {
@@ -216,6 +238,7 @@
   line-height: 24px;
   text-decoration: underline;
   text-underline-offset: 4px;
+  color: inherit;
 }
 
 /* ABOUT */
@@ -269,6 +292,10 @@
   align-items: start;
 }
 
+.footer__address {
+  max-width: 240px;
+}
+
 .footer__menu {
   justify-self: center;
 }
@@ -278,13 +305,10 @@
   text-align: center;
 }
 
-.footer__menu-list-item {
-  margin-bottom: 0;
-}
-
 .footer__menu-link {
   text-decoration: underline;
   text-underline-offset: 4px;
+  color: inherit;
 }
 
 .footer__menu-link_active {
