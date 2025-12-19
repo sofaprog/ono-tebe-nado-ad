@@ -1,16 +1,5 @@
 /* style.css */
 
-/* CRITICAL RESET */
-h1,
-h2,
-h3,
-p,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
 /* HEADER */
 
 .header {
@@ -114,10 +103,6 @@ ol {
 
 .aligned-text_right {
   text-align: right;
-}
-
-.letter-spacing-extended {
-  letter-spacing: 60px;
 }
 
 .no-letter-spacing {
